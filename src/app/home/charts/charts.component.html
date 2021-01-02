@@ -1,0 +1,103 @@
+<div class="container">
+  <div class="row">
+    <!-- Line Chart -->
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <div class="content">
+            <h5 class="card-title">Conversion</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Last year comparision:</h6>
+          </div>
+          <hr>
+          <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+    <!-- Doughnut Chart -->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="content">
+            <h5 class="card-title">Traffic Channels</h5>
+            <div class="heading-content">
+              <h6 class="card-subtitle mb-2 text-muted"> <a href="#" (click)="doughnutChart()">All</a>
+                </h6> &nbsp;&nbsp;&nbsp;
+              <h6 class="card-subtitle mb-2 text-muted"><a href="#" (click)="directDoughnutChart()">Direct</a>
+                </h6>
+            </div>
+          </div>
+          <hr>
+          <canvas id="pieChart" width="400" height="430"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <!-- Project -->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="list-content">
+            <h6><b>Projects</b></h6>
+            <a href="#">View all</a>
+          </div>
+          <hr>
+          <div class="list">
+            <img src="../../../assets/images/homepage.jpg" alt="" srcset="">
+            <h6><strong>Homepage<br> Redesign</strong>
+              <p class="list-para">Updated 4hr ago</p>
+            </h6>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </div>
+          <hr>
+          <div class="list">
+            <img src="../../../assets/images/travel.jpg" alt="" srcset="">
+            <h6><strong>Travels & Time</strong>
+              <p class="list-para">Updated 4hr ago</p>
+            </h6>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </div>
+          <hr>
+          <div class="list">
+            <img src="../../../assets/images/safari.jpg" alt="" srcset="">
+            <h6><strong>Safari Exploration</strong>
+              <p class="list-para">Updated 4hr ago</p>
+            </h6>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </div>
+          <hr>
+          <div class="list">
+            <img src="../../../assets/images/pesonal-site.jpg" alt="" srcset="">
+            <h6><strong>Personal Site</strong>
+              <p class="list-para">Updated 4hr ago</p>
+            </h6>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Line Chart -->
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <div class="list-content">
+            <h6><b>Sales</b></h6>
+            <div class="heading-content">
+              <h6 class="card-subtitle mb-2 text-muted"> <a href="#" (click)="lineChart()">All</a>
+                </h6> &nbsp;&nbsp;&nbsp;
+              <h6 class="card-subtitle mb-2 text-muted"><a href="#" (click)="directLineChart()">Direct</a>
+                </h6>&nbsp;&nbsp;&nbsp;
+                <h6 class="card-subtitle mb-2 text-muted"><a href="#" (click)="organicLineChart()">Oragnic</a>
+                </h6>
+            </div>
+          </div>
+          <hr>
+          <canvas id="lineChart" width="400" height="185"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
